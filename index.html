@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <br>
   <title>Jure Čulk - Strokovnjak za kriptosredstva</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <style>
     body {
       margin: 0;
@@ -23,6 +24,78 @@
       border: none;
       border-top: 1px solid #e0e0e0;
       margin: 0;
+    }
+
+    /* Contact form styles */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #455A64;
+      font-size: 16px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 16px;
+      font-family: sans-serif;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #455A64;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .submit-btn {
+      background-color: #455A64;
+      color: #ffffff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #37474F;
+    }
+
+    .form-title {
+      text-align: center;
+      color: #455A64;
+      font-size: clamp(24px, 4vw, 32px);
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
@@ -62,7 +135,7 @@
       </div>
 
       <div style="text-align: center">
-        <a href="https://incrementum.si/investicijski-posvet/" target="_blank" style="text-decoration: none">
+        <a href="#contact-form" style="text-decoration: none">
           <div style="display: inline-block; background-color: #455A64; color: #ffffff; padding: 12px 26px; border-radius: 8px; font-weight: bold; font-size: 15px; text-align: center; cursor: pointer">
             Prijava na posvet
           </div>
@@ -101,7 +174,7 @@
     <div style="flex: 1 1 300px; max-width: 600px; text-align: left">
       <h2 style="color: #455A64; font-size: clamp(24px, 4vw, 32px); font-weight: bold; text-align: center">Pogled v prihodnost</h2>
       <div style="text-align: center; margin: 16px 0">
-        <a href="https://incrementum.si/investicijski-posvet/" target="_blank" style="text-decoration: none">
+        <a href="#contact-form" style="text-decoration: none">
           <div style="display: inline-block; background-color: #455A64; color: #ffffff; padding: 10px 20px; border-radius: 8px; font-weight: bold; font-size: 15px; text-align: center; cursor: pointer">
             Prijava na posvet
           </div>
@@ -126,13 +199,34 @@
     </p>
   </div>
   <hr />
+  <div style="max-width: 1200px; margin: 60px auto; padding: 0 16px; text-align: center">
+    <h2 style="color: #455A64; font-size: clamp(24px, 4vw, 32px); font-weight: bold; margin-bottom: 40px">E-knjiga</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: center; margin-bottom: 40px">
+      <div style="flex: 1 1 300px; max-width: 600px; text-align: left">
+        <p style="font-size: clamp(16px, 2vw, 18px); line-height: 1.6; color: #333; margin: 0">
+          Svoje znanje in izkušnje sem strnil tudi v knjigi, kjer na razumljiv in praktičen način razlagam delovanje finančnih trgov, kriptosredstev ter trgovanja z vzvodi. Namenjena je posameznikom, ki želijo razumeti ozadje investiranja, prepoznati tveganja in se izogniti najpogostejšim napakam, s katerimi se srečujejo vlagatelji.
+        </p>
+      </div>
+      <div style="flex: 1 1 300px; max-width: 500px; text-align: center">
+        <img src="images/eknjiga.jpg" alt="Knjiga - Kako trgovati z vzvodi" style="width: 100%; height: auto; border-radius: 8px" />
+      </div>
+    </div>
+    <div style="max-width: 800px; margin: 0 auto; text-align: center">
+      <p style="font-size: clamp(16px, 2vw, 18px); line-height: 1.6; color: #455A64; font-weight: bold; margin: 0">
+        Trgovanje z vzvodi ni igra.<br>
+        Je orodje.<br>
+        Lahko ti da prednost – ali pa ti vzame vse.
+      </p>
+    </div>
+  </div>
+  <hr />
   <div style="max-width: 1200px; margin: 60px auto; padding: 0 16px; display: flex; flex-wrap: wrap; justify-content: center; gap: 60px; align-items: flex-start">
     <div style="flex: 1 1 300px; max-width: 500px">
       <blockquote style="border-left: 4px solid #455A64; padding-left: 16px; color: #333; font-size: clamp(16px, 2vw, 18px); line-height: 1.6; margin: 0 0 20px 0">
         Vabim vas, da me kontaktirate za spoznavni sestanek, kjer lahko ugotovimo najbolj smiselne priložnosti za dolgoročno plemenitenje vaših sredstev.<br><br>
         Lokacija: Incrementum d.o.o., Špruha 19, Trzin
       </blockquote>
-      <a href="https://incrementum.si/investicijski-posvet/" target="_blank" style="text-decoration: none">
+      <a href="#contact-form" style="text-decoration: none">
         <div style="margin-top: 20px; display: inline-block; background-color: #455A64; color: #ffffff; padding: 10px 24px; border-radius: 8px; font-weight: bold; font-size: 15px; text-align: center; cursor: pointer">
           Prijava na posvet
         </div>
@@ -154,6 +248,49 @@
     </div>
   </div>
   <hr />
+
+  <!-- CONTACT FORM SECTION -->
+  <div id="contact-form" style="background-color: #f8f9fa; padding: 60px 0">
+    <div class="contact-form">
+      <h2 class="form-title">Kontaktni obrazec</h2>
+      <p style="text-align: center; margin-bottom: 40px; font-size: 18px; color: #555">
+        Izpolnite spodnji obrazec in z vami se bomo povezali v najkrajšem možnem času.
+      </p>
+      
+      <form action="https://formspree.io/f/xdkgqpze" method="POST">
+        <div class="form-group">
+          <label for="name">Ime in priimek *</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Telefonska številka *</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">E-poštni naslov *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Vprašanje, sporočilo ali termin, ki vam ustreza *</label>
+          <textarea id="message" name="message" placeholder="Opišite vaše vprašanje, sporočite nam termin ki vam ustreza ali nam postavite kakršno koli drugo vprašanje..." required></textarea>
+        </div>
+        
+        <div class="form-group" style="text-align: center;">
+          <div class="g-recaptcha" data-sitekey="6LdzqU0rAAAAAGukB7pnqDYXQCPTFpJzSny2IQE9"></div>
+        </div>
+        
+        <button type="submit" class="submit-btn">Pošlji sporočilo</button>
+      </form>
+      
+      <p style="text-align: center; margin-top: 30px; font-size: 14px; color: #666">
+        * Obvezna polja<br>
+        Vaši podatki bodo obravnavani zaupno in uporabljeni izključno za namene odgovora na vaše povpraševanje.
+      </p>
+    </div>
+  </div>
 
 </body>
 </html>
